@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuActivity"
+    tools:showIn="@layout/activity_menu">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sensor_btn"
+            android:layout_width="102dp"
+            android:layout_height="114dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:text="Accelerometer"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+        <Button
+            android:id="@+id/cal_btn"
+            android:layout_width="102dp"
+            android:layout_height="114dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="250dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Calculate Displacement" />
+
+        <Button
+            android:id="@+id/map_btn"
+            android:layout_width="102dp"
+            android:layout_height="114dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="250dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Check the bridge " />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="etc"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/jtransforms-2.4.jar" sourcepath="lib/jtransforms-2.4-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/EEGAnalysis/lib/jtransforms-2.4-doc.zip!/JTransforms/doc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/sgt_v30.jar" sourcepath="lib/sgt_src_v30.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/EEGAnalysis/lib/sgt_javadoc_v30.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/jwave-svn-ro"/>
+	<classpathentry kind="lib" path="C:/Users/knoodrake/workspace/rhino1_7R3/js.jar" sourcepath="C:/Users/knoodrake/workspace/rhino1_7R3/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/knoodrake/workspace/rhino1_7R3/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/knoodrake/workspace/rsyntaxtextarea.jar" sourcepath="C:/Users/knoodrake/workspace/rsyntaxtextarea_2.0.2_Source.zip"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

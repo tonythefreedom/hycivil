@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GraphActivity"
+    tools:showIn="@layout/activity_graph">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:id="@+id/graph" />
+
+        <Button
+            android:id="@+id/dis_graph_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="displace_touch"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Draw Displacement" />
+
+        <Button
+            android:id="@+id/fft_graph_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Calculate FFT" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
