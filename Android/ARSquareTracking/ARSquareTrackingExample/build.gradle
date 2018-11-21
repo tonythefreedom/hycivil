@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "org.artoolkitx.arx.arsquaretracking"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -39,17 +39,17 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation(name: 'arxj-release', ext: 'aar')
     // This links the ARXJ-release library from the repository specified above ('../../../../../../SDK/lib/ARXJ').
     //compile project(':ARXJ')                   // If you want to develop ARXJ and test it with ARSquareTrackingExample you need to un-commend this line and
     // comment-out the line above.
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:design:27.1.1'
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
     implementation 'com.jjoe64:graphview:4.2.2'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    compile group: 'edu.emory.mathcs', name: 'JTransforms', version: '2.4'
-
+    api 'edu.emory.mathcs:JTransforms:2.4'
 }
 
 // Task Actions is defined by task type of Copy. To reference a variable within a string, the string has to be delimited by " rather than '.

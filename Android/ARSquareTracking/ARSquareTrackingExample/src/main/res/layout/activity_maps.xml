@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity" />
+    tools:context=".MapsActivity"
+    tools:ignore="missingPrefix">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_07">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/drawer_btn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/group">
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Map"
+                    android:textColor="@color/color_03"
+                    android:textSize="13sp"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/color_07" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/color_03"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_search"
+                    android:layout_gravity="center|start"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:text="Search here:"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_09"
+                    android:layout_gravity="center|start"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <include layout="@layout/content_maps" />
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.NavigationView
+
+        android:layout_width="307dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/drawer_list" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

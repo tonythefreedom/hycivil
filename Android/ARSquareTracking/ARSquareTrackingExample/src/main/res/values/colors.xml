@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--application theme-->
+
+    <color name="color_01">#f9f9f9</color>
+    <color name="color_02">#F2413e40</color>
+    <color name="color_03">#ffffff</color>
+    <color name="color_04">#d8d8d8</color>
+    <color name="color_05">#3e3e3e</color>
+    <color name="color_06">#c0c0c0</color>
+    <color name="color_07">#3b3b3b</color>
+    <color name="color_08">#413e40</color>
+    <color name="color_09">#4a4a4a</color>
+    <color name="color_10">#ffd500</color>
+    <color name="color_11">#a0a0a0</color>
+    <color name="color_12">#979797</color>
+
+    <!--<color name="color_43">#505050</color>-->
+
+
+    <!--underline-->
+
+    <!--btn type1 click event-->
+    <drawable name="type1_unchecked">#fd6246</drawable>
+    <drawable name="type1_checked">#d63417</drawable>
+
+    <!--btn type2 click event-->
+    <drawable name="type2_unchecked">#ec4527</drawable>
+    <drawable name="type2_checked">#d63417</drawable>
+
+    <color name="home_title_bg">#f9f9f9</color>
+
+</resources>

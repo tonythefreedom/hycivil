@@ -11,26 +11,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="168dp">
         <com.jjoe64.graphview.GraphView
             android:layout_width="match_parent"
-            android:layout_height="200dip"
+            android:layout_height="150dip"
             android:id="@+id/graph" />
 
-        <Button
-            android:id="@+id/dis_graph_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="displace_touch"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="Draw Displacement" />
 
-        <Button
-            android:id="@+id/fft_graph_btn"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="Calculate FFT" />
+            android:orientation="vertical"
+            android:layout_gravity="start|center"
+            android:layout_marginTop="92dp">
+
+            <Button
+                android:id="@+id/dis_graph_btn"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:onClick="displace_touch"
+                android:text="Draw Displacement"
+                android:textSize="13sp"
+                android:textColor="@color/color_10"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_corner"
+                android:layout_marginBottom="18dp"/>
+
+            <Button
+                android:id="@+id/fft_graph_btn"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:text="Calculate FFT"
+                android:textSize="13sp"
+                android:textColor="@color/color_03"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_corner2"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

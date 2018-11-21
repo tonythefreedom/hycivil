@@ -1,44 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MenuActivity"
-    tools:showIn="@layout/activity_menu">
+    tools:showIn="@layout/activity_menu"
+    android:background="@color/color_08">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <Button
+        <FrameLayout
             android:id="@+id/sensor_btn"
             android:layout_width="102dp"
             android:layout_height="114dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="50dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="121dp"
             android:text="Accelerometer"
-            style="@style/Widget.AppCompat.Button.Colored"
-            />
+            android:background="@drawable/ic_background">
 
-        <Button
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/ic_accelerometer"/>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accelerometer"
+                    android:textSize="11sp"
+                    android:textColor="@color/color_03"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+            
+        </FrameLayout>
+
+        <FrameLayout
             android:id="@+id/cal_btn"
             android:layout_width="102dp"
             android:layout_height="114dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="250dp"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="Calculate Displacement" />
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Calculate Displacement"
+            android:background="@drawable/ic_background">
 
-        <Button
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/ic_calculate"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:textSize="11sp"
+                    android:textColor="@color/color_03"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Displacement"
+                    android:textSize="11sp"
+                    android:textColor="@color/color_03"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
             android:id="@+id/map_btn"
             android:layout_width="102dp"
             android:layout_height="114dp"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="250dp"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="Check the bridge " />
+            android:layout_gravity="center|right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Check the bridge "
+            android:background="@drawable/ic_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/ic_group"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check"
+                    android:textSize="11sp"
+                    android:textColor="@color/color_03"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bridge"
+                    android:textSize="11sp"
+                    android:textColor="@color/color_03"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </FrameLayout>
     </FrameLayout>
 
     <ScrollView
@@ -47,4 +133,4 @@
 
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>
